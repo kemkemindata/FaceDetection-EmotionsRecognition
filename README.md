@@ -56,13 +56,11 @@ You can install the required Python packages using pip:
 
 2. **Load the training and test data using ImageDataGenerator.**
 Define and compile the CNN model.
-Train the model for a specified number of epochs (default: 10).
-Save the model as face_classification_model.h5.
-Model Parameters: You can adjust the model architecture and training parameters (such as batch size, epochs) in the train.py script.
+Train the model for a specified number of epochs (default: 20).
 
 3. **Training the Model**
 Once the dataset is prepared, you can train the model using the provided script. The model will be trained on the train dataset and validated on the test dataset.
-First, we select the number of epochs to be 15. The number of epochs is a hyperparameter of gradient descent that controls the number of complete passes through the training dataset. Steps per epoch are calculated by doing a floor division of the number of images in the training generator with the batch size of the training generator. This is repeated for the validation set.
+First, we select the number of epochs to be 20. The number of epochs is a hyperparameter of gradient descent that controls the number of complete passes through the training dataset.
 
 
 4. **Saving the Model architecture as H5 file**
