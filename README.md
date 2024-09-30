@@ -6,7 +6,7 @@ This project is a Convolutional Neural Network (CNN) based model that classifies
 ## Project Overview
 
 The objective of this project is to classify facial expressions into one of six categories using a CNN model. 
-The model is trained on grayscale images of faces, resized to 48x48 pixels. It uses Keras’ `ImageDataGenerator` to load and preprocess the images.
+The model is trained on grayscale images of faces, resized to 48x48 pixels. 
 Once the model is trained, it is saved, and users can load it(the model) to classify new images.
 
 
@@ -24,7 +24,7 @@ The dataset is organized into two main directories:
 **DATASET**
 The dataset consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. Each face is based on the emotion shown in the facial expression in one of seven categories (Angry, Disgust, Fear, Happy, Sad, Surprise, Neutral).
 
-The training set consists of 28,273 images and the test set consists of 7,067 images. 
+The training set consists of 28,709 images and the test set consists of 7,178 images. 
 
 **Importing the libraries**
 The following libraries are imported:
@@ -54,7 +54,7 @@ Further some modules from the Tensorflow library are also imported.
 
 You can install the required Python packages using pip:
 
-2. **Load the training and test data using ImageDataGenerator.**
+2. **Load the training and test data and convert to DataFrame.**
 Define and compile the CNN model.
 Train the model for a specified number of epochs (default: 20).
 
@@ -64,10 +64,10 @@ First, we select the number of epochs to be 20. The number of epochs is a hyperp
 
 
 4. **Saving the Model architecture as H5 file**
-After training, the model can be saved using Joblib or H5. For the purpose of this project, I used the H5methos to save the model.
+After training, the model can be saved using Joblib or H5. 
 
 5. **Testing the Model**
-The model can be tested with new images. You can run the provided script to classify images from the test set or any other folder.
+The model can be tested with new images. 
 
 6. **Testing a New Image**
 Test the model on a new image:
